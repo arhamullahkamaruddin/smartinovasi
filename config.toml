@@ -1,0 +1,15 @@
+baseURL = "https://example.com/"
+languageCode = "en-us"
+title = "Smart Inovasi"
+theme = "smartinovasi"
+
+[params]
+  bsTheme = "light"
+  description = "Smart Inovasi - IT Managed Services & System Integrator"
+  author = "Smart Inovasi"
+  footer_about = "Smart Inovasi adalah mitra resmi Odoo berbasis di Makassar sebagai IT Managed Services dan System Integrator."
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

@@ -1,0 +1,11 @@
+name = "smartinovasi"
+license = "MIT"
+licenselink = ""
+description = "Smart Inovasi company profile + blog Hugo theme converted from static template."
+homepage = ""
+tags = ["company", "bootstrap", "blog"]
+features = ["bootstrap", "responsive"]
+min_version = "0.120.0"
+
+[author]
+  name = "Smart Inovasi"

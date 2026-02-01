@@ -1,0 +1,580 @@
+{{ define "main" }}
+<section class="si-blog-hero" id="blog">
+    <div class="container">
+        <div class="row g-4 align-items-stretch">
+            <div class="col-12 col-lg-7">
+                <div class="si-blog-hero__card si-blog-hero__card--text h-100">
+                    <h2 class="si-blog-hero__title">Blog</h2>
+                </div>
+            </div>
+            <div class="col-12 col-lg-5">
+                <div class="si-blog-hero__card si-blog-hero__card--visual h-100">
+                    <div class="si-blog-hero__visual-wrap">
+                        <img alt="blog Illustration" class="si-blog-hero__img"
+                            src='{{ "assets/img/illustrations/ill-blog.png" | relURL }}'>
+                        </img>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="si-blog si-blog--list" id="blogList">
+    <div class="container">
+        <div class="row g-4 justify-content-center" id="blogGrid">
+            <div class="col-12 col-sm-6 col-lg-3">
+                <article class="si-blog-card h-100">
+                    <div class="si-blog-card__thumb">
+                        <img alt="blog 1" src='{{ "assets/img/ui/card-image.png" | relURL }}' />
+                    </div>
+                    <div class="si-blog-card__body">
+                        <h3 class="si-blog-card__title">Blog 1</h3>
+                        <p class="si-blog-card__desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ipsum primis in
+                            faucibus orci luctus et ultrices posuere cubilia Curae.
+                        </p>
+                        <a class="si-blog-card__link" href="#">
+                            Read More <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <article class="si-blog-card h-100">
+                    <div class="si-blog-card__thumb">
+                        <img alt="blog 2" src='{{ "assets/img/ui/card-image.png" | relURL }}' />
+                    </div>
+                    <div class="si-blog-card__body">
+                        <h3 class="si-blog-card__title">Blog 2</h3>
+                        <p class="si-blog-card__desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ipsum primis in
+                            faucibus orci luctus et ultrices posuere cubilia Curae.
+                        </p>
+                        <a class="si-blog-card__link" href="#">
+                            Read More <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <article class="si-blog-card h-100">
+                    <div class="si-blog-card__thumb">
+                        <img alt="blog 3" src='{{ "assets/img/ui/card-image.png" | relURL }}' />
+                    </div>
+                    <div class="si-blog-card__body">
+                        <h3 class="si-blog-card__title">Blog 3</h3>
+                        <p class="si-blog-card__desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ipsum primis in
+                            faucibus orci luctus et ultrices posuere cubilia Curae.
+                        </p>
+                        <a class="si-blog-card__link" href="#">
+                            Read More <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <article class="si-blog-card h-100">
+                    <div class="si-blog-card__thumb">
+                        <img alt="blog 4" src='{{ "assets/img/ui/card-image.png" | relURL }}' />
+                    </div>
+                    <div class="si-blog-card__body">
+                        <h3 class="si-blog-card__title">Blog 4</h3>
+                        <p class="si-blog-card__desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ipsum primis in
+                            faucibus orci luctus et ultrices posuere cubilia Curae.
+                        </p>
+                        <a class="si-blog-card__link" href="#">
+                            Read More <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <article class="si-blog-card h-100">
+                    <div class="si-blog-card__thumb">
+                        <img alt="blog 5" src='{{ "assets/img/ui/card-image.png" | relURL }}' />
+                    </div>
+                    <div class="si-blog-card__body">
+                        <h3 class="si-blog-card__title">Blog 5</h3>
+                        <p class="si-blog-card__desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ipsum primis in
+                            faucibus orci luctus et ultrices posuere cubilia Curae.
+                        </p>
+                        <a class="si-blog-card__link" href="#">
+                            Read More <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <article class="si-blog-card h-100">
+                    <div class="si-blog-card__thumb">
+                        <img alt="blog 6" src='{{ "assets/img/ui/card-image.png" | relURL }}' />
+                    </div>
+                    <div class="si-blog-card__body">
+                        <h3 class="si-blog-card__title">Blog 6</h3>
+                        <p class="si-blog-card__desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ipsum primis in
+                            faucibus orci luctus et ultrices posuere cubilia Curae.
+                        </p>
+                        <a class="si-blog-card__link" href="#">
+                            Read More <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <article class="si-blog-card h-100">
+                    <div class="si-blog-card__thumb">
+                        <img alt="blog 7" src='{{ "assets/img/ui/card-image.png" | relURL }}' />
+                    </div>
+                    <div class="si-blog-card__body">
+                        <h3 class="si-blog-card__title">Blog 7</h3>
+                        <p class="si-blog-card__desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ipsum primis in
+                            faucibus orci luctus et ultrices posuere cubilia Curae.
+                        </p>
+                        <a class="si-blog-card__link" href="#">
+                            Read More <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <article class="si-blog-card h-100">
+                    <div class="si-blog-card__thumb">
+                        <img alt="blog 8" src='{{ "assets/img/ui/card-image.png" | relURL }}' />
+                    </div>
+                    <div class="si-blog-card__body">
+                        <h3 class="si-blog-card__title">Blog 8</h3>
+                        <p class="si-blog-card__desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ipsum primis in
+                            faucibus orci luctus et ultrices posuere cubilia Curae.
+                        </p>
+                        <a class="si-blog-card__link" href="#">
+                            Read More <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <article class="si-blog-card h-100">
+                    <div class="si-blog-card__thumb">
+                        <img alt="blog 9" src='{{ "assets/img/ui/card-image.png" | relURL }}' />
+                    </div>
+                    <div class="si-blog-card__body">
+                        <h3 class="si-blog-card__title">Blog 9</h3>
+                        <p class="si-blog-card__desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ipsum primis in
+                            faucibus orci luctus et ultrices posuere cubilia Curae.
+                        </p>
+                        <a class="si-blog-card__link" href="#">
+                            Read More <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <article class="si-blog-card h-100">
+                    <div class="si-blog-card__thumb">
+                        <img alt="blog 10" src='{{ "assets/img/ui/card-image.png" | relURL }}' />
+                    </div>
+                    <div class="si-blog-card__body">
+                        <h3 class="si-blog-card__title">Blog 10</h3>
+                        <p class="si-blog-card__desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ipsum primis in
+                            faucibus orci luctus et ultrices posuere cubilia Curae.
+                        </p>
+                        <a class="si-blog-card__link" href="#">
+                            Read More <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <article class="si-blog-card h-100">
+                    <div class="si-blog-card__thumb">
+                        <img alt="blog 11" src='{{ "assets/img/ui/card-image.png" | relURL }}' />
+                    </div>
+                    <div class="si-blog-card__body">
+                        <h3 class="si-blog-card__title">Blog 11</h3>
+                        <p class="si-blog-card__desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ipsum primis in
+                            faucibus orci luctus et ultrices posuere cubilia Curae.
+                        </p>
+                        <a class="si-blog-card__link" href="#">
+                            Read More <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <article class="si-blog-card h-100">
+                    <div class="si-blog-card__thumb">
+                        <img alt="blog 12" src='{{ "assets/img/ui/card-image.png" | relURL }}' />
+                    </div>
+                    <div class="si-blog-card__body">
+                        <h3 class="si-blog-card__title">Blog 12</h3>
+                        <p class="si-blog-card__desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ipsum primis in
+                            faucibus orci luctus et ultrices posuere cubilia Curae.
+                        </p>
+                        <a class="si-blog-card__link" href="#">
+                            Read More <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <article class="si-blog-card h-100">
+                    <div class="si-blog-card__thumb">
+                        <img alt="blog 13" src='{{ "assets/img/ui/card-image.png" | relURL }}' />
+                    </div>
+                    <div class="si-blog-card__body">
+                        <h3 class="si-blog-card__title">Blog 13</h3>
+                        <p class="si-blog-card__desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ipsum primis in
+                            faucibus orci luctus et ultrices posuere cubilia Curae.
+                        </p>
+                        <a class="si-blog-card__link" href="#">
+                            Read More <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <article class="si-blog-card h-100">
+                    <div class="si-blog-card__thumb">
+                        <img alt="blog 14" src='{{ "assets/img/ui/card-image.png" | relURL }}' />
+                    </div>
+                    <div class="si-blog-card__body">
+                        <h3 class="si-blog-card__title">Blog 14</h3>
+                        <p class="si-blog-card__desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ipsum primis in
+                            faucibus orci luctus et ultrices posuere cubilia Curae.
+                        </p>
+                        <a class="si-blog-card__link" href="#">
+                            Read More <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <article class="si-blog-card h-100">
+                    <div class="si-blog-card__thumb">
+                        <img alt="blog 15" src='{{ "assets/img/ui/card-image.png" | relURL }}' />
+                    </div>
+                    <div class="si-blog-card__body">
+                        <h3 class="si-blog-card__title">Blog 15</h3>
+                        <p class="si-blog-card__desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ipsum primis in
+                            faucibus orci luctus et ultrices posuere cubilia Curae.
+                        </p>
+                        <a class="si-blog-card__link" href="#">
+                            Read More <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <article class="si-blog-card h-100">
+                    <div class="si-blog-card__thumb">
+                        <img alt="blog 16" src='{{ "assets/img/ui/card-image.png" | relURL }}' />
+                    </div>
+                    <div class="si-blog-card__body">
+                        <h3 class="si-blog-card__title">Blog 16</h3>
+                        <p class="si-blog-card__desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ipsum primis in
+                            faucibus orci luctus et ultrices posuere cubilia Curae.
+                        </p>
+                        <a class="si-blog-card__link" href="#">
+                            Read More <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <article class="si-blog-card h-100">
+                    <div class="si-blog-card__thumb">
+                        <img alt="blog 17" src='{{ "assets/img/ui/card-image.png" | relURL }}' />
+                    </div>
+                    <div class="si-blog-card__body">
+                        <h3 class="si-blog-card__title">Blog 17</h3>
+                        <p class="si-blog-card__desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ipsum primis in
+                            faucibus orci luctus et ultrices posuere cubilia Curae.
+                        </p>
+                        <a class="si-blog-card__link" href="#">
+                            Read More <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <article class="si-blog-card h-100">
+                    <div class="si-blog-card__thumb">
+                        <img alt="blog 18" src='{{ "assets/img/ui/card-image.png" | relURL }}' />
+                    </div>
+                    <div class="si-blog-card__body">
+                        <h3 class="si-blog-card__title">Blog 18</h3>
+                        <p class="si-blog-card__desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ipsum primis in
+                            faucibus orci luctus et ultrices posuere cubilia Curae.
+                        </p>
+                        <a class="si-blog-card__link" href="#">
+                            Read More <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <article class="si-blog-card h-100">
+                    <div class="si-blog-card__thumb">
+                        <img alt="blog 19" src='{{ "assets/img/ui/card-image.png" | relURL }}' />
+                    </div>
+                    <div class="si-blog-card__body">
+                        <h3 class="si-blog-card__title">Blog 19</h3>
+                        <p class="si-blog-card__desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ipsum primis in
+                            faucibus orci luctus et ultrices posuere cubilia Curae.
+                        </p>
+                        <a class="si-blog-card__link" href="#">
+                            Read More <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <article class="si-blog-card h-100">
+                    <div class="si-blog-card__thumb">
+                        <img alt="blog 20" src='{{ "assets/img/ui/card-image.png" | relURL }}' />
+                    </div>
+                    <div class="si-blog-card__body">
+                        <h3 class="si-blog-card__title">Blog 20</h3>
+                        <p class="si-blog-card__desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ipsum primis in
+                            faucibus orci luctus et ultrices posuere cubilia Curae.
+                        </p>
+                        <a class="si-blog-card__link" href="#">
+                            Read More <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <article class="si-blog-card h-100">
+                    <div class="si-blog-card__thumb">
+                        <img alt="blog 21" src='{{ "assets/img/ui/card-image.png" | relURL }}' />
+                    </div>
+                    <div class="si-blog-card__body">
+                        <h3 class="si-blog-card__title">Blog 21</h3>
+                        <p class="si-blog-card__desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ipsum primis in
+                            faucibus orci luctus et ultrices posuere cubilia Curae.
+                        </p>
+                        <a class="si-blog-card__link" href="#">
+                            Read More <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <article class="si-blog-card h-100">
+                    <div class="si-blog-card__thumb">
+                        <img alt="blog 22" src='{{ "assets/img/ui/card-image.png" | relURL }}' />
+                    </div>
+                    <div class="si-blog-card__body">
+                        <h3 class="si-blog-card__title">Blog 22</h3>
+                        <p class="si-blog-card__desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ipsum primis in
+                            faucibus orci luctus et ultrices posuere cubilia Curae.
+                        </p>
+                        <a class="si-blog-card__link" href="#">
+                            Read More <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <article class="si-blog-card h-100">
+                    <div class="si-blog-card__thumb">
+                        <img alt="blog 23" src='{{ "assets/img/ui/card-image.png" | relURL }}' />
+                    </div>
+                    <div class="si-blog-card__body">
+                        <h3 class="si-blog-card__title">Blog 23</h3>
+                        <p class="si-blog-card__desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ipsum primis in
+                            faucibus orci luctus et ultrices posuere cubilia Curae.
+                        </p>
+                        <a class="si-blog-card__link" href="#">
+                            Read More <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <article class="si-blog-card h-100">
+                    <div class="si-blog-card__thumb">
+                        <img alt="blog 24" src='{{ "assets/img/ui/card-image.png" | relURL }}' />
+                    </div>
+                    <div class="si-blog-card__body">
+                        <h3 class="si-blog-card__title">Blog 24</h3>
+                        <p class="si-blog-card__desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ipsum primis in
+                            faucibus orci luctus et ultrices posuere cubilia Curae.
+                        </p>
+                        <a class="si-blog-card__link" href="#">
+                            Read More <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <article class="si-blog-card h-100">
+                    <div class="si-blog-card__thumb">
+                        <img alt="blog 25" src='{{ "assets/img/ui/card-image.png" | relURL }}' />
+                    </div>
+                    <div class="si-blog-card__body">
+                        <h3 class="si-blog-card__title">Blog 25</h3>
+                        <p class="si-blog-card__desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ipsum primis in
+                            faucibus orci luctus et ultrices posuere cubilia Curae.
+                        </p>
+                        <a class="si-blog-card__link" href="#">
+                            Read More <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <article class="si-blog-card h-100">
+                    <div class="si-blog-card__thumb">
+                        <img alt="blog 26" src='{{ "assets/img/ui/card-image.png" | relURL }}' />
+                    </div>
+                    <div class="si-blog-card__body">
+                        <h3 class="si-blog-card__title">Blog 26</h3>
+                        <p class="si-blog-card__desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ipsum primis in
+                            faucibus orci luctus et ultrices posuere cubilia Curae.
+                        </p>
+                        <a class="si-blog-card__link" href="#">
+                            Read More <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <article class="si-blog-card h-100">
+                    <div class="si-blog-card__thumb">
+                        <img alt="blog 27" src='{{ "assets/img/ui/card-image.png" | relURL }}' />
+                    </div>
+                    <div class="si-blog-card__body">
+                        <h3 class="si-blog-card__title">Blog 27</h3>
+                        <p class="si-blog-card__desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ipsum primis in
+                            faucibus orci luctus et ultrices posuere cubilia Curae.
+                        </p>
+                        <a class="si-blog-card__link" href="#">
+                            Read More <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <article class="si-blog-card h-100">
+                    <div class="si-blog-card__thumb">
+                        <img alt="blog 28" src='{{ "assets/img/ui/card-image.png" | relURL }}' />
+                    </div>
+                    <div class="si-blog-card__body">
+                        <h3 class="si-blog-card__title">Blog 28</h3>
+                        <p class="si-blog-card__desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ipsum primis in
+                            faucibus orci luctus et ultrices posuere cubilia Curae.
+                        </p>
+                        <a class="si-blog-card__link" href="#">
+                            Read More <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <article class="si-blog-card h-100">
+                    <div class="si-blog-card__thumb">
+                        <img alt="blog 29" src='{{ "assets/img/ui/card-image.png" | relURL }}' />
+                    </div>
+                    <div class="si-blog-card__body">
+                        <h3 class="si-blog-card__title">Blog 29</h3>
+                        <p class="si-blog-card__desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ipsum primis in
+                            faucibus orci luctus et ultrices posuere cubilia Curae.
+                        </p>
+                        <a class="si-blog-card__link" href="#">
+                            Read More <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <article class="si-blog-card h-100">
+                    <div class="si-blog-card__thumb">
+                        <img alt="blog 30" src='{{ "assets/img/ui/card-image.png" | relURL }}' />
+                    </div>
+                    <div class="si-blog-card__body">
+                        <h3 class="si-blog-card__title">Blog 30</h3>
+                        <p class="si-blog-card__desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ipsum primis in
+                            faucibus orci luctus et ultrices posuere cubilia Curae.
+                        </p>
+                        <a class="si-blog-card__link" href="#">
+                            Read More <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <article class="si-blog-card h-100">
+                    <div class="si-blog-card__thumb">
+                        <img alt="blog 31" src='{{ "assets/img/ui/card-image.png" | relURL }}' />
+                    </div>
+                    <div class="si-blog-card__body">
+                        <h3 class="si-blog-card__title">Blog 31</h3>
+                        <p class="si-blog-card__desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ipsum primis in
+                            faucibus orci luctus et ultrices posuere cubilia Curae.
+                        </p>
+                        <a class="si-blog-card__link" href="#">
+                            Read More <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <article class="si-blog-card h-100">
+                    <div class="si-blog-card__thumb">
+                        <img alt="blog 32" src='{{ "assets/img/ui/card-image.png" | relURL }}' />
+                    </div>
+                    <div class="si-blog-card__body">
+                        <h3 class="si-blog-card__title">Blog 32</h3>
+                        <p class="si-blog-card__desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ipsum primis in
+                            faucibus orci luctus et ultrices posuere cubilia Curae.
+                        </p>
+                        <a class="si-blog-card__link" href="#">
+                            Read More <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <!-- Pagination mount -->
+        <nav aria-label="blog pagination" class="si-pagination" id="blogPagination"></nav>
+    </div>
+</section>
+{{ end }}
+{{ define "extra_css" }}
+<link rel="stylesheet" href='{{ "assets/css/pages/blog.css" | relURL }}'>
+{{ end }}
+{{ define "extra_js" }}
+<script src='{{ "assets/js/pages/blog.js" | relURL }}'></script>
+{{ end }}

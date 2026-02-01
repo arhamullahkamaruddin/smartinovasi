@@ -1,0 +1,16 @@
+.si-program-banner{
+  width: 100%;
+  margin-top: 18px;
+  overflow: hidden;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.si-program-banner__img{
+  width: 82%;
+  margin-bottom: 40px;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}

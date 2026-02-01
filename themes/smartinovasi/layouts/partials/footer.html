@@ -1,0 +1,70 @@
+<footer class="si-footer">
+  <div class="si-footer__top">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-12 col-lg-4">
+          <a class="si-footer__brand d-inline-block mb-3" href='{{ "/" | relURL }}'>
+            <img class="img-fluid" src='{{ "assets/img/logo/logo.png" | relURL }}' alt="{{ .Site.Title }}">
+          </a>
+          <p class="si-footer__desc mb-0">
+            {{ .Site.Params.footer_about | default "Smart Inovasi adalah perusahaan IT yang berfokus pada IT Managed Services, System Integrator, dan pengembangan solusi digital." }}
+          </p>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h6 class="si-footer__title">Quick Links</h6>
+          <ul class="si-footer__list">
+            <li><a href='{{ "/about/" | relURL }}'>› About Us</a></li>
+            <li><a href='{{ "/product/" | relURL }}'>› Product</a></li>
+            <li><a href='{{ "/services/" | relURL }}'>› Services</a></li>
+            <li><a href='{{ "/team/" | relURL }}'>› Team</a></li>
+            <li><a href='{{ "/program/" | relURL }}'>› Program</a></li>
+            <li><a href='{{ "/blog/" | relURL }}'>› Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <h6 class="si-footer__title">Services</h6>
+          <ul class="si-footer__list">
+            <li><a href='{{ "/services/" | relURL }}'>› Software Development</a></li>
+            <li><a href='{{ "/services/" | relURL }}'>› IT Managed Services</a></li>
+            <li><a href='{{ "/services/" | relURL }}'>› IT Training</a></li>
+            <li><a href='{{ "/services/" | relURL }}'>› Webinar</a></li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-lg-3">
+          <h6 class="si-footer__title">Contact</h6>
+          <div class="si-footer__contact">
+            <a href="https://maps.app.goo.gl/1NXHWbs1rsS8K5pw6" target="_blank">Jl. Mangga OA No. 20, Nusa Tamalanrea Indah, Makassar Sulawesi Selatan – 90245, Indonesia</a>
+            <a href="tel:+6282347491087">+62 823-4749-1087</a>
+            <a href="mailto:info@smartinovasi.com">info@smartinovasi.com</a>
+          </div>
+
+          <div class="si-footer__social mt-3">
+            <a href="https://www.facebook.com/smartinovasi2014" target="_blank" rel="noopener" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/smartinovasi" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/smart-inovasi" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.youtube.com/channel/UCQo_5HBvZT8NZcoJomYQ5zQ/videos" target="_blank" rel="noopener" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="https://web.whatsapp.com/send?phone=6282347491087&text=Halo%20Admin%0D%0ASaya%20Ingin%20mendapatkan%20Informasi%20terkait%0D%0AProduk%20dan%20Layanan%20dari%20Smart%20Inovasi" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="si-footer__bottom">
+    <div class="container">
+      <div class="si-footer__bottom-inner">
+        <div class="small text-muted">© {{ now.Format "2006" }} {{ .Site.Title }}. All rights reserved.</div>
+        <div class="si-footer__links small">
+          <a href='{{ "/" | relURL }}'>Privacy Policy</a>
+          <span class="si-footer__chev">•</span>
+          <a href='{{ "/" | relURL }}'>Terms</a>
+          <span class="si-footer__chev">•</span>
+          <a href="https://maps.app.goo.gl/1NXHWbs1rsS8K5pw6" target="_blank" rel="noopener">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

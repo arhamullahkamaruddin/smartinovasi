@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="{{ .Site.Params.bsTheme | default " light" }}">
+
+<head>
+  <!-- Basic -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <meta name="description" content="{{ .Description | default .Site.Params.description | default "" }}">
+  <meta name="author" content="{{ .Site.Params.author | default .Site.Title }}">
+
+  <!-- Title -->
+  <title>{{ block "title" . }}{{ if .IsHome }}Home{{ else }}{{ .Title }}{{ end }} | {{ .Site.Title }}{{ end }}</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href='{{ "assets/img/favicon/favicon.png" | relURL }}' type="image/png">
+
+  <!-- Vendor CSS (Libraries) -->
+  <link rel="stylesheet" href='{{ "assets/vendor/bootstrap/css/bootstrap.min.css" | relURL }}'>
+  <link rel="stylesheet" href='{{ "assets/vendor/bootstrap-icons/bootstrap-icons.css" | relURL }}'>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href='{{ "assets/css/style.css" | relURL }}'>
+
+  {{ block "extra_css" . }}{{ end }}
+</head>
+
+<body>
+  {{ partial "navbar.html" . }}
+
+  <!-- Page Content -->
+  {{ block "main" . }}{{ end }}
+
+  {{ partial "footer.html" . }}
+
+  <!-- Back to top -->
+  <button class="si-to-top" type="button" aria-label="Back to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Vendor JS (Libraries) -->
+  <script src='{{ "assets/vendor/bootstrap/js/bootstrap.bundle.min.js" | relURL }}'></script>
+
+  <!-- Main JS -->
+  <script src='{{ "assets/js/main.js" | relURL }}'></script>
+
+  {{ block "extra_js" . }}{{ end }}
+</body>
+
+</html>

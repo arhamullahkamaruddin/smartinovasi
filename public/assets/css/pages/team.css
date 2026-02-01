@@ -1,0 +1,215 @@
+.si-team-hero{
+  background: #fff;
+  margin-top: 100px;
+  overflow: visible;
+}
+
+.si-team-hero__card{
+  border-radius: 22px;
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,.06);
+}
+
+.si-team-hero__card--text{
+  background: #eeeeee;
+  min-height: 230px;
+  padding: 0 60px;
+  display: flex;
+  align-items: center;
+}
+
+.si-team-hero__title{
+  font-weight: 500;
+  font-size: 44px;
+  letter-spacing: -0.3px;
+  background: linear-gradient(to bottom, #2A89FF 0%, #0B3D91 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.si-team-hero__card--visual{
+  min-height: 230px;
+  background: linear-gradient(to bottom, #d8ecff 0%, #5aa9ff 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.si-team-hero__visual-wrap{
+  position: absolute;
+  inset: 0;
+}
+
+.si-team-hero__img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+  display: block;
+}
+
+.si-people{
+  background: #fff;
+  padding: 40px 0 60px;
+}
+
+/* Card */
+.si-people-card{
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,.10);
+  box-shadow: 0 10px 16px rgba(0,0,0,.12);
+
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  min-height: 210px;
+}
+
+/* Foto kiri */
+.si-people-card__photo{
+  background: #ffffff;
+  display: grid;
+  place-items: center;
+}
+
+.si-people-card__photo img{
+  width: 100%;
+  height: 100%;
+  max-width: 220px;
+  object-fit: contain;
+  display: block;
+}
+
+/* Konten kanan */
+.si-people-card__body{
+  padding: 26px 26px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.si-people-card__name{
+  margin: 0;
+  font-weight: 800;
+  font-size: 22px;
+  color: #111;
+}
+
+.si-people-card__role{
+  margin: 0;
+  font-weight: 700;
+  color: #1f6fd6;
+}
+
+.si-people-card__desc{
+  margin: 6px 0 10px;
+  color: rgba(0,0,0,.72);
+  line-height: 1.55;
+  max-width: 360px;
+}
+
+/* Social */
+.si-people-card__social{
+  display: flex;
+  gap: 10px;
+  margin-top: auto; /* ✅ dorong social ke bawah seperti gambar */
+}
+
+.si-people-card__icon{
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  background: #eaf4ff;
+  color: #0b3d91;
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+  transition: transform .18s ease, background .18s ease;
+}
+
+.si-people-card__icon:hover{
+  background: #0b3d91;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+/* Tablet: tetap 2 kolom karena col-md-6.
+   Cuma kecilkan foto biar proporsional */
+@media (max-width: 991.98px){
+  .si-people-card{
+    grid-template-columns: 200px 1fr;
+  }
+  .si-people-card__body{
+    padding: 22px;
+  }
+}
+
+/* Mobile: jadi 1 card per baris + layout card jadi vertikal */
+@media (max-width: 767.98px){
+  .si-people-card{
+    grid-template-columns: 1fr;
+  }
+
+  .si-people-card__photo{
+    padding: 18px 18px 10px;
+  }
+
+  .si-people-card__photo img{
+    max-height: 260px;
+  }
+
+  .si-people-card__body{
+    padding: 18px 18px 20px;
+    text-align: left;
+  }
+
+  .si-people-card__desc{
+    max-width: 100%;
+  }
+}
+
+
+/* Responsive (Tablet) */
+@media (max-width: 991.98px){
+  .si-team-hero{
+    margin-top: 90px;
+  }
+
+  .si-team-hero__title{
+    font-size: 34px;
+  }
+
+  .si-team-hero__card--text{
+    padding: 0 28px;
+    min-height: 220px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .si-team-hero__card--visual{
+    min-height: 220px;
+  }
+}
+
+/* Responsive (Mobile) */
+@media (max-width: 767.98px){
+  .si-team-hero{
+    margin-top: 80px;
+  }
+
+  .si-team-hero__title{
+    font-size: 32px;
+  }
+
+  .si-team-hero__card--text{
+    padding: 0 22px;
+    min-height: 200px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .si-team-hero__card--visual{
+    min-height: 220px;
+  }
+}

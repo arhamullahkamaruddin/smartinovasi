@@ -1,0 +1,335 @@
+/* About Us */
+.si-about {
+  background: #fff;
+  padding: 0 0 40px;
+  margin-top: 120px;
+  overflow: visible;
+}
+
+.si-about__card {
+  border-radius: 22px;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, .06);
+}
+
+.si-about__card--text {
+  background: #eeeeee;
+  min-height: 230px;
+  padding: 0 60px;
+  display: flex;
+  align-items: center;
+}
+
+.si-about__title {
+  font-weight: 500;
+  font-size: 44px;
+  letter-spacing: -0.3px;
+  background: linear-gradient(to bottom, #2A89FF 0%, #0B3D91 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.si-about__card--visual {
+  min-height: 230px;
+  background: linear-gradient(to bottom, #d8ecff 0%, #5aa9ff 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.si-about__visual-wrap {
+  position: absolute;
+  inset: 0;
+}
+
+.si-about__img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+}
+
+/* Who We Are */
+.si-who {
+  background: #fff;
+  padding: 0 0 40px;
+}
+
+.si-who__title {
+  font-weight: 500;
+  font-size: 44px;
+  letter-spacing: -0.3px;
+  background: linear-gradient(to bottom, #2A89FF 0%, #0B3D91 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.si-who__row {
+  row-gap: 18px;
+}
+
+.si-who__media {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.si-who__img {
+  width: min(560px, 100%);
+  height: auto;
+  display: block;
+}
+
+.si-who__content {
+  max-width: 520px;
+  margin-left: auto;
+}
+
+.si-who__welcome {
+  font-size: 18px;
+  color: #1f6fd6;
+  margin-bottom: 8px;
+}
+
+.si-who__logo img {
+  height: 48px;
+  width: auto;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.si-who__desc {
+  margin: 0 0 10px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #222;
+}
+
+/* Why Choose Us */
+.si-why {
+  background: #fff;
+  padding: 0 0 40px;
+}
+
+.si-why__row {
+  row-gap: 18px;
+}
+
+.si-why__title {
+  font-weight: 500;
+  font-size: 44px;
+  letter-spacing: -0.3px;
+  background: linear-gradient(to bottom, #2A89FF 0%, #0B3D91 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.si-why__desc {
+  margin: 0 0 14px;
+  max-width: 520px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #222;
+}
+
+.si-why__quote {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #111;
+  font-style: normal;
+}
+
+.si-why__media {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.si-why__img {
+  width: min(560px, 100%);
+  height: auto;
+  display: block;
+}
+
+/* Our Mission */
+.si-mission {
+  background: #fff;
+  padding: 0 0 40px;
+}
+
+.si-mission__row {
+  row-gap: 18px;
+}
+
+.si-mission__title {
+  font-weight: 500;
+  font-size: 44px;
+  letter-spacing: -0.3px;
+  background: linear-gradient(to bottom, #2A89FF 0%, #0B3D91 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.si-mission__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 18px;
+  max-width: 560px;
+}
+
+.si-mission__item {
+  display: grid;
+  grid-template-columns: 42px 1fr;
+  gap: 14px;
+  align-items: start;
+}
+
+.si-mission__icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #cfe0f3;
+  display: grid;
+  place-items: center;
+  color: #0b3d91;
+  flex: 0 0 auto;
+}
+
+.si-mission__icon i {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.si-mission__text {
+  font-size: 16px;
+  line-height: 1.75;
+  color: #222;
+}
+
+.si-mission__media {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.si-mission__img {
+  width: min(560px, 100%);
+  height: auto;
+  display: block;
+}
+
+/* Responsive (Tablet) */
+@media (max-width: 991.98px) {
+
+  /* About Us */
+  .si-about {
+    margin-top: 90px;
+  }
+
+  .si-about__title {
+    font-size: 34px;
+  }
+
+  .si-about__card--text {
+    padding: 0 28px;
+    min-height: 220px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .si-about__card--visual {
+    min-height: 220px;
+  }
+
+  .si-about__img {
+    object-position: center bottom;
+  }
+
+  /* Who We Are */
+  .si-who__title {
+    font-size: 34px;
+  }
+
+  .si-who__content {
+    max-width: 640px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .si-who__logo img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Why Choose Us */
+  .si-why__title {
+    font-size: 34px;
+  }
+
+  .si-why__content {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .si-why__desc {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Our Mission */
+  .si-mission__title {
+    font-size: 34px;
+  }
+
+  .si-mission__content {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 680px;
+  }
+
+  .si-mission__list {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Responsive (Mobile) */
+@media (max-width: 767.98px) {
+  .si-about {
+    margin-top: 80px;
+  }
+
+  .si-about__title {
+    font-size: 32px;
+  }
+
+  .si-about__card--text {
+    padding: 0 22px;
+    min-height: 200px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .si-about__card--visual {
+    min-height: 220px;
+  }
+
+  .si-about__visual-wrap {
+    position: absolute;
+    inset: 0;
+    align-items: flex-end;
+  }
+
+  .si-about__img {
+    object-position: center bottom;
+  }
+}

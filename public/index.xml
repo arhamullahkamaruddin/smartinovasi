@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Smart Inovasi</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Smart Inovasi</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 29 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tips Menulis Artikel di Hugo Part 2</title>
+      <link>http://localhost:1313/blog/contoh/</link>
+      <pubDate>Thu, 29 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/contoh/</guid>
+      <description>Struktur front matter sederhana untuk blog company profile.</description>
+    </item>
+    <item>
+      <title>Welcome to Smart Inovasi Blog</title>
+      <link>http://localhost:1313/blog/welcome/</link>
+      <pubDate>Thu, 29 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/welcome/</guid>
+      <description>Contoh artikel blog untuk memastikan list dan halaman detail bekerja di Hugo.</description>
+    </item>
+    <item>
+      <title>Tips Menulis Artikel di Hugo</title>
+      <link>http://localhost:1313/blog/tips/</link>
+      <pubDate>Wed, 28 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/tips/</guid>
+      <description>Struktur front matter sederhana untuk blog company profile.</description>
+    </item>
+    <item>
+      <title>About Us</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Product</title>
+      <link>http://localhost:1313/product/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/product/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Program</title>
+      <link>http://localhost:1313/program/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/program/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Program Detail</title>
+      <link>http://localhost:1313/program/detail/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/program/detail/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Search</title>
+      <link>http://localhost:1313/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/search/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Services</title>
+      <link>http://localhost:1313/services/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/services/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Team</title>
+      <link>http://localhost:1313/team/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/team/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

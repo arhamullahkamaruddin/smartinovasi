@@ -1,0 +1,25 @@
+{{ define "main" }}
+<main class="si-404">
+  <div class="container">
+    <div class="si-404__wrap">
+      <!-- Ilustrasi -->
+      <img alt="404 Illustration" class="si-404__img" src='{{ "assets/img/illustrations/ill-404.png" | relURL }}'>
+      <!-- Title -->
+      <h1 class="si-404__title">Oops! Halaman Tidak Ditemukan</h1>
+      <!-- Desc -->
+      <p class="si-404__desc">
+        Maaf, halaman yang Anda cari tidak tersedia atau sudah dipindahkan. Silakan kembali ke Beranda atau gunakan menu
+        di atas untuk menemukan informasi yang Anda butuhkan.
+      </p>
+      <!-- Button -->
+      <a class="si-404__btn" href='{{ "/" | relURL }}'>
+        Back To Home <i class="bi bi-arrow-right"></i>
+      </a>
+      </img>
+    </div>
+  </div>
+</main>
+{{ end }}
+{{ define "extra_css" }}
+<link rel="stylesheet" href='{{ "assets/css/pages/404errorpage.css" | relURL }}'>
+{{ end }}

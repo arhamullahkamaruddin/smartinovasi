@@ -1,0 +1,57 @@
+{{ define "main" }}
+<section class="si-blog-hero" id="blog">
+  <div class="container">
+    <div class="row g-4 align-items-stretch">
+      <div class="col-12 col-lg-7">
+        <div class="si-blog-hero__card si-blog-hero__card--text h-100">
+          <h2 class="si-blog-hero__title">{{ .Title | default "Blog" }}</h2>
+        </div>
+      </div>
+      <div class="col-12 col-lg-5">
+        <div class="si-blog-hero__card si-blog-hero__card--visual h-100">
+          <div class="si-blog-hero__visual-wrap">
+            <img class="si-blog-hero__img" src='{{ "assets/img/illustrations/ill-blog.png" | relURL }}' alt="Blog Illustration">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="si-blog si-blog--list" id="blogList">
+  <div class="container">
+    <div class="row g-4 justify-content-center" id="blogGrid">
+      {{ range .Pages.ByDate.Reverse }}
+        <div class="col-12 col-sm-6 col-lg-3">
+          <article class="si-blog-card h-100">
+            <div class="si-blog-card__thumb">
+              {{ $img := .Params.image }}
+              {{ if $img }}
+                <img src='{{ $img | relURL }}' alt="{{ .Title }}">
+              {{ else }}
+                <img src='{{ "assets/img/ui/card-image.png" | relURL }}' alt="{{ .Title }}">
+              {{ end }}
+            </div>
+            <div class="si-blog-card__body">
+              <h3 class="si-blog-card__title">{{ .Title }}</h3>
+              <p class="si-blog-card__desc">{{ .Summary | plainify | truncate 120 }}</p>
+              <a class="si-blog-card__link" href="{{ .RelPermalink }}">Read more</a>
+            </div>
+          </article>
+        </div>
+      {{ end }}
+    </div>
+
+    <!-- Pagination (client-side by blog.js) -->
+    <nav class="si-pagination mt-5" aria-label="Blog pagination" id="blogPagination"></nav>
+  </div>
+</section>
+{{ end }}
+
+{{ define "extra_css" }}
+  <link rel="stylesheet" href='{{ "assets/css/pages/blog.css" | relURL }}'>
+{{ end }}
+
+{{ define "extra_js" }}
+  <script src='{{ "assets/js/pages/blog.js" | relURL }}'></script>
+{{ end }}

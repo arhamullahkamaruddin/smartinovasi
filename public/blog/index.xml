@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on Smart Inovasi</title>
+    <link>http://localhost:1313/blog/</link>
+    <description>Recent content in Blog on Smart Inovasi</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 29 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tips Menulis Artikel di Hugo Part 2</title>
+      <link>http://localhost:1313/blog/contoh/</link>
+      <pubDate>Thu, 29 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/contoh/</guid>
+      <description>Struktur front matter sederhana untuk blog company profile.</description>
+    </item>
+    <item>
+      <title>Welcome to Smart Inovasi Blog</title>
+      <link>http://localhost:1313/blog/welcome/</link>
+      <pubDate>Thu, 29 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/welcome/</guid>
+      <description>Contoh artikel blog untuk memastikan list dan halaman detail bekerja di Hugo.</description>
+    </item>
+    <item>
+      <title>Tips Menulis Artikel di Hugo</title>
+      <link>http://localhost:1313/blog/tips/</link>
+      <pubDate>Wed, 28 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/tips/</guid>
+      <description>Struktur front matter sederhana untuk blog company profile.</description>
+    </item>
+  </channel>
+</rss>

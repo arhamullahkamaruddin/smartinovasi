@@ -1,0 +1,71 @@
+<nav class="navbar si-nav fixed-top">
+  <div class="container">
+    <div class="si-nav__pill">
+      <a class="si-nav__brand" href='{{ "/" | relURL }}' aria-label="Home">
+        <img src='{{ "assets/img/logo/logo.png" | relURL }}' alt="{{ .Site.Title }}">
+      </a>
+
+      {{ $items := slice
+        (dict "name" "Home" "url" "/")
+        (dict "name" "About Us" "url" "/about/")
+        (dict "name" "Product" "url" "/product/")
+        (dict "name" "Services" "url" "/services/")
+        (dict "name" "Team" "url" "/team/")
+        (dict "name" "Program" "url" "/program/")
+        (dict "name" "Blog" "url" "/blog/")
+      }}
+
+      <ul class="si-nav__menu">
+        {{ range $items }}
+          {{ $isActive := false }}
+          {{ if and $.IsHome (eq .url "/") }}{{ $isActive = true }}{{ end }}
+          {{ if and (not $.IsHome) (ne .url "/") (hasPrefix $.RelPermalink .url) }}{{ $isActive = true }}{{ end }}
+          <li>
+            <a href='{{ .url | relURL }}' class='{{ if $isActive }}is-active{{ end }}'>{{ .name }}</a>
+          </li>
+        {{ end }}
+      </ul>
+
+      <div class="si-nav__actions">
+        <div class="si-nav__search">
+          <button class="si-nav__search-toggle" type="button" aria-label="Open search" aria-expanded="false">
+            <i class="bi bi-search"></i>
+          </button>
+          <form class="si-nav__search-popover" role="search" aria-label="Search form" action='{{ "/search/" | relURL }}' method="get">
+            <input class="si-nav__search-input" type="search" name="q" placeholder="Search ..." aria-label="Search">
+            <button class="si-nav__search-submit" type="submit" aria-label="Search">
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
+        </div>
+
+        <button class="si-nav__toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#siNavMobile"
+                aria-controls="siNavMobile" aria-label="Open menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile menu -->
+  <div class="offcanvas offcanvas-end si-nav__offcanvas" tabindex="-1" id="siNavMobile" aria-labelledby="siNavMobileLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="siNavMobileLabel">Menu</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body si-nav__offcanvas-body">
+      <ul class="si-nav__mobile-menu">
+        {{ range $items }}
+          <li><a href='{{ .url | relURL }}' data-bs-dismiss="offcanvas">{{ .name }}</a></li>
+        {{ end }}
+      </ul>
+
+      <form class="si-nav__mobile-search" role="search" aria-label="Search mobile" action='{{ "/search/" | relURL }}' method="get">
+        <input class="si-nav__search-input" type="search" name="q" placeholder="Search ..." aria-label="Search">
+        <button class="si-nav__search-submit" type="submit" aria-label="Search">
+          <i class="bi bi-search"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+</nav>

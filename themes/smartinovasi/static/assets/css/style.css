@@ -947,6 +947,10 @@
         max-height: 220px;
     }
 
+    .si-hero_btn {
+        margin-top: 20px;
+    }
+
     /* Team */
     .si-team {
         --per: 1;

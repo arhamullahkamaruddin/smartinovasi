@@ -1,24 +1,19 @@
-.si-team-hero{
-  background: #fff;
-  margin-top: 100px;
+/* team */
+.si-team {
+  margin-top: 80px;
+  position: relative;
   overflow: visible;
-}
-
-.si-team-hero__card{
-  border-radius: 22px;
-  overflow: hidden;
-  border: 1px solid rgba(0,0,0,.06);
-}
-
-.si-team-hero__card--text{
-  background: #eeeeee;
-  min-height: 230px;
-  padding: 0 60px;
+  background-image: url("../../img/backgrounds/bg-image.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 384px;
   display: flex;
   align-items: center;
+  margin-bottom: 30px;
 }
 
-.si-team-hero__title{
+.si-team__title {
   font-weight: 500;
   font-size: 44px;
   letter-spacing: -0.3px;
@@ -28,29 +23,51 @@
   color: transparent;
 }
 
-.si-team-hero__card--visual{
-  min-height: 230px;
-  background: linear-gradient(to bottom, #d8ecff 0%, #5aa9ff 100%);
-  position: relative;
-  overflow: hidden;
+.si-team-hero__crumb {
+  font-size: 18px;
+  color: #0B57D0;
+  display: flex;
+  gap: 8px;
+  align-items: center;
 }
 
-.si-team-hero__visual-wrap{
-  position: absolute;
-  inset: 0;
+.si-team-hero__crumb a {
+  color: inherit;
+  text-decoration: none;
 }
 
-.si-team-hero__img{
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  object-position: center bottom;
-  display: block;
+.si-team-hero__crumb a:hover {
+  text-decoration: underline;
+}
+
+.si-team-hero__sep {
+  opacity: 0.8;
+}
+
+@media (max-width: 767.98px) {
+  .si-team {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .si-team .container {
+    width: 100%;
+  }
+
+  .si-team__title {
+    font-size: 32px;
+    color: #FFFFFF;
+  }
+
+  .si-team-hero__crumb {
+    justify-content: center;
+    color: #FFFFFF;
+  }
 }
 
 .si-people{
   background: #fff;
-  padding: 40px 0 60px;
+  padding: 0 0 20px;
 }
 
 /* Card */

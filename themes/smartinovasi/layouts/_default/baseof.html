@@ -11,7 +11,8 @@
   <meta name="author" content="{{ .Site.Params.author | default .Site.Title }}">
 
   <!-- Title -->
-  <title>{{ block "title" . }}{{ if .IsHome }}Home{{ else }}{{ .Title }}{{ end }} | {{ .Site.Title }}{{ end }}</title>
+  <title>{{ block "title" . }}{{ if .IsHome }}Beranda{{ else }}{{ .Title }}{{ end }} | {{ .Site.Title }}{{ end }}
+  </title>
 
   <!-- Favicon -->
   <link rel="icon" href='{{ "assets/img/favicon/favicon.png" | relURL }}' type="image/png">
@@ -34,6 +35,12 @@
 
   {{ partial "footer.html" . }}
 
+  <!-- Floating WhatsApp (icon + label = images) -->
+  <a class="si-wa-float" href="https://web.whatsapp.com/send?phone=6282347491087&text=Halo%20Admin%0D%0ASaya%20Ingin%20mendapatkan%20Informasi%20terkait%0D%0AProduk%20dan%20Layanan%20dari%20Smart%20Inovasi"
+    target="_blank" rel="noopener noreferrer" aria-label="Chat WhatsApp">
+    <img class="si-wa-float__img" src='{{ "/assets/img/ui/chat-with-us.png" | relURL }}' alt="Chat dengan kami" />
+  </a>
+
   <!-- Back to top -->
   <button class="si-to-top" type="button" aria-label="Back to top">
     <i class="bi bi-arrow-up"></i>
@@ -46,6 +53,7 @@
   <script src='{{ "assets/js/main.js" | relURL }}'></script>
 
   {{ block "extra_js" . }}{{ end }}
+  
 </body>
 
 </html>

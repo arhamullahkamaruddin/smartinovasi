@@ -1,27 +1,18 @@
 {{ define "main" }}
 <section class="si-about" id="about">
     <div class="container">
-        <div class="row g-5 align-items-stretch">
-            <div class="col-12 col-lg-7">
-                <div class="si-about__card si-about__card--text h-100">
-                    <h2 class="si-about__title">About Us</h2>
-                </div>
-            </div>
-            <div class="col-12 col-lg-5">
-                <div class="si-about__card si-about__card--visual h-100">
-                    <div class="si-about__visual-wrap">
-                        <img alt="About Illustration" class="si-about__img"
-                            src='{{ "assets/img/illustrations/ill-about.png" | relURL }}'>
-                        </img>
-                    </div>
-                </div>
-            </div>
+        <h1 class="si-about__title">Tentang Kami</h1>
+        <div class="si-about-hero__crumb">
+            <a href='{{ "/" | relURL }}'>Beranda</a>
+            <span class="si-about-hero__sep">/</span>
+            <span>Tentang Kami</span>
         </div>
     </div>
 </section>
+
 <section class="si-who" id="about">
     <div class="container">
-        <h2 class="si-who__title text-center">Who we are?</h2>
+        <h2 class="si-who__title text-center">Siapa Kami?</h2>
         <div class="row align-items-center si-who__row">
             <div class="col-12 col-lg-6">
                 <div class="si-who__media">
@@ -31,7 +22,7 @@
             </div>
             <div class="col-12 col-lg-6">
                 <div class="si-who__content">
-                    <div class="si-who__welcome">Welcome To</div>
+                    <div class="si-who__welcome">Selamat datang di</div>
                     <div class="si-who__logo">
                         <img alt="Smart Inovasi" src='{{ "assets/img/logo/logo.png" | relURL }}' />
                     </div>
@@ -54,7 +45,7 @@
         <div class="row align-items-center si-why__row">
             <div class="col-12 col-lg-6">
                 <div class="si-why__content">
-                    <h2 class="si-why__title">Why Choose Us</h2>
+                    <h2 class="si-why__title">Mengapa Memilih Kami?</h2>
                     <p class="si-why__desc">
                         Berpengalaman dalam bidang teknologi informasi, telah mengerjakan project IT di berbagai
                         instansi negeri dan
@@ -77,7 +68,7 @@
         <div class="row align-items-center si-mission__row">
             <div class="col-12 col-lg-6 order-1 order-lg-2">
                 <div class="si-mission__content">
-                    <h2 class="si-mission__title">Our Mission</h2>
+                    <h2 class="si-mission__title">Misi Kami</h2>
                     <ul class="si-mission__list">
                         <li class="si-mission__item">
                             <span class="si-mission__icon"><i class="bi bi-check2"></i></span>

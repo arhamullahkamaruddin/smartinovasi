@@ -1,568 +1,106 @@
 {{ define "main" }}
-<section class="si-services-hero" id="services">
+<section class="si-services" id="services">
     <div class="container">
-        <div class="row g-4 align-items-stretch">
-            <div class="col-12 col-lg-7">
-                <div class="si-services-hero__card si-services-hero__card--text h-100">
-                    <h2 class="si-services-hero__title">Services</h2>
-                </div>
-            </div>
-            <div class="col-12 col-lg-5">
-                <div class="si-services-hero__card si-services-hero__card--visual h-100">
-                    <div class="si-services-hero__visual-wrap">
-                        <img alt="services Illustration" class="si-services-hero__img"
-                            src='{{ "assets/img/illustrations/ill-services.png" | relURL }}'>
-                        </img>
-                    </div>
-                </div>
-            </div>
+        <h1 class="si-services__title">Layanan</h1>
+        <div class="si-services-hero__crumb">
+            <a href='{{ "/" | relURL }}'>Beranda</a>
+            <span class="si-services-hero__sep">/</span>
+            <span>Layanan</span>
         </div>
     </div>
 </section>
-<section class="si-services si-services--list" id="servicesList">
+
+<section class="si-services--list" id="servicesList">
     <div class="container">
         <div class="row g-4 justify-content-center" id="servicesGrid">
             <div class="col-12 col-sm-6 col-lg-3">
                 <article class="si-services-card h-100">
                     <div class="si-services-card__thumb">
-                        <img alt="services 1" src='{{ "assets/img/ui/card-image.png" | relURL }}' />
+                        <img alt="services 1" src='{{ "assets/img/services/elearning.png" | relURL }}' />
                     </div>
                     <div class="si-services-card__body">
-                        <h3 class="si-services-card__title">Services 1</h3>
+                        <h3 class="si-services-card__title">E-Learning Berbasis Moodle</h3>
                         <p class="si-services-card__desc">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ipsum primis in
-                            faucibus orci luctus et ultrices posuere cubilia Curae.
+                            Moodle merupakan platform yang dibuat khusus sebagai sistem manajemen pembelajaran, bersifat
+                            web-based sehingga seluruh kegiatan belajar mengajar dilakukan dengan mengakses website
+                            menggunakan browser.
                         </p>
-                        <a class="si-services-card__link" href="#">
-                            Read More <span aria-hidden="true">→</span>
-                        </a>
                     </div>
                 </article>
             </div>
             <div class="col-12 col-sm-6 col-lg-3">
                 <article class="si-services-card h-100">
                     <div class="si-services-card__thumb">
-                        <img alt="services 2" src='{{ "assets/img/ui/card-image.png" | relURL }}' />
+                        <img alt="services 2" src='{{ "assets/img/services/ecommerce.png" | relURL }}' />
                     </div>
                     <div class="si-services-card__body">
-                        <h3 class="si-services-card__title">Services 2</h3>
+                        <h3 class="si-services-card__title">Solusi E-commerce untuk UKM (Web Profile + Aplikasi Android)
+                        </h3>
                         <p class="si-services-card__desc">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ipsum primis in
-                            faucibus orci luctus et ultrices posuere cubilia Curae.
+                            Solusi yang tepat bagi anda yang membutuhkan website dalam memperkenalkan usaha atau produk
+                            ditambah aplikasi android yang akan memudahkan client dalam melakukan pemesanan produk dan
+                            pembayaran secara online.
                         </p>
-                        <a class="si-services-card__link" href="#">
-                            Read More <span aria-hidden="true">→</span>
-                        </a>
                     </div>
                 </article>
             </div>
             <div class="col-12 col-sm-6 col-lg-3">
                 <article class="si-services-card h-100">
                     <div class="si-services-card__thumb">
-                        <img alt="services 3" src='{{ "assets/img/ui/card-image.png" | relURL }}' />
+                        <img alt="services 3" src='{{ "assets/img/services/profile.png" | relURL }}' />
                     </div>
                     <div class="si-services-card__body">
-                        <h3 class="si-services-card__title">Services 3</h3>
+                        <h3 class="si-services-card__title">Pembuatan Web Profile</h3>
                         <p class="si-services-card__desc">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ipsum primis in
-                            faucibus orci luctus et ultrices posuere cubilia Curae.
+                            Web Profile adalah Solusi yang tepat bagi instansi atau usaha anda untuk memperkenalkan
+                            identitas, publikasi informasi dan meningkatkan brand atau kepercayaan pelanggan di internet
+                            selain dari sosial media seperti Facebook, Instagram, Youtube, dan Sosial media lain nya.
                         </p>
-                        <a class="si-services-card__link" href="#">
-                            Read More <span aria-hidden="true">→</span>
-                        </a>
                     </div>
                 </article>
             </div>
             <div class="col-12 col-sm-6 col-lg-3">
                 <article class="si-services-card h-100">
                     <div class="si-services-card__thumb">
-                        <img alt="services 4" src='{{ "assets/img/ui/card-image.png" | relURL }}' />
+                        <img alt="services 4" src='{{ "assets/img/services/cms.png" | relURL }}' />
                     </div>
                     <div class="si-services-card__body">
-                        <h3 class="si-services-card__title">Services 4</h3>
+                        <h3 class="si-services-card__title">Content Management System untuk Pendidikan</h3>
                         <p class="si-services-card__desc">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ipsum primis in
-                            faucibus orci luctus et ultrices posuere cubilia Curae.
+                            Merupakan solusi yang tepat untuk perguruan tinggi dan sekolah dalam mengimplementasikan web
+                            dan aplikasi pembelajaran dengan efektif dan efisien, menghemat biaya dan tanpa membutuhkan
+                            tenaga IT yang Expert
                         </p>
-                        <a class="si-services-card__link" href="#">
-                            Read More <span aria-hidden="true">→</span>
-                        </a>
                     </div>
                 </article>
             </div>
             <div class="col-12 col-sm-6 col-lg-3">
                 <article class="si-services-card h-100">
                     <div class="si-services-card__thumb">
-                        <img alt="services 5" src='{{ "assets/img/ui/card-image.png" | relURL }}' />
+                        <img alt="services 5" src='{{ "assets/img/services/app.png" | relURL }}' />
                     </div>
                     <div class="si-services-card__body">
-                        <h3 class="si-services-card__title">Services 5</h3>
+                        <h3 class="si-services-card__title">Pembuatan Aplikasi Web/Android</h3>
                         <p class="si-services-card__desc">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ipsum primis in
-                            faucibus orci luctus et ultrices posuere cubilia Curae.
+                            Melayani perancangan hingga pembuatan aplikasi berbasis web dan android/iOS serta Website
+                            profil untuk perusahaan, instansi negeri hingga sekolah atau perguruan tinggi sesuai
+                            kebutuhan.
                         </p>
-                        <a class="si-services-card__link" href="#">
-                            Read More <span aria-hidden="true">→</span>
-                        </a>
                     </div>
                 </article>
             </div>
             <div class="col-12 col-sm-6 col-lg-3">
                 <article class="si-services-card h-100">
                     <div class="si-services-card__thumb">
-                        <img alt="services 6" src='{{ "assets/img/ui/card-image.png" | relURL }}' />
+                        <img alt="services 6" src='{{ "assets/img/services/it.png" | relURL }}' />
                     </div>
                     <div class="si-services-card__body">
-                        <h3 class="si-services-card__title">Services 6</h3>
+                        <h3 class="si-services-card__title">IT Training</h3>
                         <p class="si-services-card__desc">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ipsum primis in
-                            faucibus orci luctus et ultrices posuere cubilia Curae.
+                            Merupakan Layanan dari Smart Inovasi berupa pelatihan atau training privat dan non privat
+                            (Kelas) untuk pengembangan Sumber daya manusia dalam menguasai skill di era digital sehingga
+                            mampu bersaing di dunia kerja maupun dunia usaha.
                         </p>
-                        <a class="si-services-card__link" href="#">
-                            Read More <span aria-hidden="true">→</span>
-                        </a>
-                    </div>
-                </article>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-                <article class="si-services-card h-100">
-                    <div class="si-services-card__thumb">
-                        <img alt="services 7" src='{{ "assets/img/ui/card-image.png" | relURL }}' />
-                    </div>
-                    <div class="si-services-card__body">
-                        <h3 class="si-services-card__title">Services 7</h3>
-                        <p class="si-services-card__desc">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ipsum primis in
-                            faucibus orci luctus et ultrices posuere cubilia Curae.
-                        </p>
-                        <a class="si-services-card__link" href="#">
-                            Read More <span aria-hidden="true">→</span>
-                        </a>
-                    </div>
-                </article>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-                <article class="si-services-card h-100">
-                    <div class="si-services-card__thumb">
-                        <img alt="services 8" src='{{ "assets/img/ui/card-image.png" | relURL }}' />
-                    </div>
-                    <div class="si-services-card__body">
-                        <h3 class="si-services-card__title">Services 8</h3>
-                        <p class="si-services-card__desc">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ipsum primis in
-                            faucibus orci luctus et ultrices posuere cubilia Curae.
-                        </p>
-                        <a class="si-services-card__link" href="#">
-                            Read More <span aria-hidden="true">→</span>
-                        </a>
-                    </div>
-                </article>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-                <article class="si-services-card h-100">
-                    <div class="si-services-card__thumb">
-                        <img alt="services 9" src='{{ "assets/img/ui/card-image.png" | relURL }}' />
-                    </div>
-                    <div class="si-services-card__body">
-                        <h3 class="si-services-card__title">Services 9</h3>
-                        <p class="si-services-card__desc">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ipsum primis in
-                            faucibus orci luctus et ultrices posuere cubilia Curae.
-                        </p>
-                        <a class="si-services-card__link" href="#">
-                            Read More <span aria-hidden="true">→</span>
-                        </a>
-                    </div>
-                </article>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-                <article class="si-services-card h-100">
-                    <div class="si-services-card__thumb">
-                        <img alt="services 10" src='{{ "assets/img/ui/card-image.png" | relURL }}' />
-                    </div>
-                    <div class="si-services-card__body">
-                        <h3 class="si-services-card__title">Services 10</h3>
-                        <p class="si-services-card__desc">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ipsum primis in
-                            faucibus orci luctus et ultrices posuere cubilia Curae.
-                        </p>
-                        <a class="si-services-card__link" href="#">
-                            Read More <span aria-hidden="true">→</span>
-                        </a>
-                    </div>
-                </article>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-                <article class="si-services-card h-100">
-                    <div class="si-services-card__thumb">
-                        <img alt="services 11" src='{{ "assets/img/ui/card-image.png" | relURL }}' />
-                    </div>
-                    <div class="si-services-card__body">
-                        <h3 class="si-services-card__title">Services 11</h3>
-                        <p class="si-services-card__desc">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ipsum primis in
-                            faucibus orci luctus et ultrices posuere cubilia Curae.
-                        </p>
-                        <a class="si-services-card__link" href="#">
-                            Read More <span aria-hidden="true">→</span>
-                        </a>
-                    </div>
-                </article>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-                <article class="si-services-card h-100">
-                    <div class="si-services-card__thumb">
-                        <img alt="services 12" src='{{ "assets/img/ui/card-image.png" | relURL }}' />
-                    </div>
-                    <div class="si-services-card__body">
-                        <h3 class="si-services-card__title">Services 12</h3>
-                        <p class="si-services-card__desc">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ipsum primis in
-                            faucibus orci luctus et ultrices posuere cubilia Curae.
-                        </p>
-                        <a class="si-services-card__link" href="#">
-                            Read More <span aria-hidden="true">→</span>
-                        </a>
-                    </div>
-                </article>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-                <article class="si-services-card h-100">
-                    <div class="si-services-card__thumb">
-                        <img alt="services 13" src='{{ "assets/img/ui/card-image.png" | relURL }}' />
-                    </div>
-                    <div class="si-services-card__body">
-                        <h3 class="si-services-card__title">Services 13</h3>
-                        <p class="si-services-card__desc">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ipsum primis in
-                            faucibus orci luctus et ultrices posuere cubilia Curae.
-                        </p>
-                        <a class="si-services-card__link" href="#">
-                            Read More <span aria-hidden="true">→</span>
-                        </a>
-                    </div>
-                </article>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-                <article class="si-services-card h-100">
-                    <div class="si-services-card__thumb">
-                        <img alt="services 14" src='{{ "assets/img/ui/card-image.png" | relURL }}' />
-                    </div>
-                    <div class="si-services-card__body">
-                        <h3 class="si-services-card__title">Services 14</h3>
-                        <p class="si-services-card__desc">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ipsum primis in
-                            faucibus orci luctus et ultrices posuere cubilia Curae.
-                        </p>
-                        <a class="si-services-card__link" href="#">
-                            Read More <span aria-hidden="true">→</span>
-                        </a>
-                    </div>
-                </article>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-                <article class="si-services-card h-100">
-                    <div class="si-services-card__thumb">
-                        <img alt="services 15" src='{{ "assets/img/ui/card-image.png" | relURL }}' />
-                    </div>
-                    <div class="si-services-card__body">
-                        <h3 class="si-services-card__title">Services 15</h3>
-                        <p class="si-services-card__desc">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ipsum primis in
-                            faucibus orci luctus et ultrices posuere cubilia Curae.
-                        </p>
-                        <a class="si-services-card__link" href="#">
-                            Read More <span aria-hidden="true">→</span>
-                        </a>
-                    </div>
-                </article>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-                <article class="si-services-card h-100">
-                    <div class="si-services-card__thumb">
-                        <img alt="services 16" src='{{ "assets/img/ui/card-image.png" | relURL }}' />
-                    </div>
-                    <div class="si-services-card__body">
-                        <h3 class="si-services-card__title">Services 16</h3>
-                        <p class="si-services-card__desc">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ipsum primis in
-                            faucibus orci luctus et ultrices posuere cubilia Curae.
-                        </p>
-                        <a class="si-services-card__link" href="#">
-                            Read More <span aria-hidden="true">→</span>
-                        </a>
-                    </div>
-                </article>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-                <article class="si-services-card h-100">
-                    <div class="si-services-card__thumb">
-                        <img alt="services 17" src='{{ "assets/img/ui/card-image.png" | relURL }}' />
-                    </div>
-                    <div class="si-services-card__body">
-                        <h3 class="si-services-card__title">Services 17</h3>
-                        <p class="si-services-card__desc">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ipsum primis in
-                            faucibus orci luctus et ultrices posuere cubilia Curae.
-                        </p>
-                        <a class="si-services-card__link" href="#">
-                            Read More <span aria-hidden="true">→</span>
-                        </a>
-                    </div>
-                </article>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-                <article class="si-services-card h-100">
-                    <div class="si-services-card__thumb">
-                        <img alt="services 18" src='{{ "assets/img/ui/card-image.png" | relURL }}' />
-                    </div>
-                    <div class="si-services-card__body">
-                        <h3 class="si-services-card__title">Services 18</h3>
-                        <p class="si-services-card__desc">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ipsum primis in
-                            faucibus orci luctus et ultrices posuere cubilia Curae.
-                        </p>
-                        <a class="si-services-card__link" href="#">
-                            Read More <span aria-hidden="true">→</span>
-                        </a>
-                    </div>
-                </article>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-                <article class="si-services-card h-100">
-                    <div class="si-services-card__thumb">
-                        <img alt="services 19" src='{{ "assets/img/ui/card-image.png" | relURL }}' />
-                    </div>
-                    <div class="si-services-card__body">
-                        <h3 class="si-services-card__title">Services 19</h3>
-                        <p class="si-services-card__desc">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ipsum primis in
-                            faucibus orci luctus et ultrices posuere cubilia Curae.
-                        </p>
-                        <a class="si-services-card__link" href="#">
-                            Read More <span aria-hidden="true">→</span>
-                        </a>
-                    </div>
-                </article>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-                <article class="si-services-card h-100">
-                    <div class="si-services-card__thumb">
-                        <img alt="services 20" src='{{ "assets/img/ui/card-image.png" | relURL }}' />
-                    </div>
-                    <div class="si-services-card__body">
-                        <h3 class="si-services-card__title">Services 20</h3>
-                        <p class="si-services-card__desc">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ipsum primis in
-                            faucibus orci luctus et ultrices posuere cubilia Curae.
-                        </p>
-                        <a class="si-services-card__link" href="#">
-                            Read More <span aria-hidden="true">→</span>
-                        </a>
-                    </div>
-                </article>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-                <article class="si-services-card h-100">
-                    <div class="si-services-card__thumb">
-                        <img alt="services 21" src='{{ "assets/img/ui/card-image.png" | relURL }}' />
-                    </div>
-                    <div class="si-services-card__body">
-                        <h3 class="si-services-card__title">Services 21</h3>
-                        <p class="si-services-card__desc">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ipsum primis in
-                            faucibus orci luctus et ultrices posuere cubilia Curae.
-                        </p>
-                        <a class="si-services-card__link" href="#">
-                            Read More <span aria-hidden="true">→</span>
-                        </a>
-                    </div>
-                </article>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-                <article class="si-services-card h-100">
-                    <div class="si-services-card__thumb">
-                        <img alt="services 22" src='{{ "assets/img/ui/card-image.png" | relURL }}' />
-                    </div>
-                    <div class="si-services-card__body">
-                        <h3 class="si-services-card__title">Services 22</h3>
-                        <p class="si-services-card__desc">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ipsum primis in
-                            faucibus orci luctus et ultrices posuere cubilia Curae.
-                        </p>
-                        <a class="si-services-card__link" href="#">
-                            Read More <span aria-hidden="true">→</span>
-                        </a>
-                    </div>
-                </article>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-                <article class="si-services-card h-100">
-                    <div class="si-services-card__thumb">
-                        <img alt="services 23" src='{{ "assets/img/ui/card-image.png" | relURL }}' />
-                    </div>
-                    <div class="si-services-card__body">
-                        <h3 class="si-services-card__title">Services 23</h3>
-                        <p class="si-services-card__desc">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ipsum primis in
-                            faucibus orci luctus et ultrices posuere cubilia Curae.
-                        </p>
-                        <a class="si-services-card__link" href="#">
-                            Read More <span aria-hidden="true">→</span>
-                        </a>
-                    </div>
-                </article>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-                <article class="si-services-card h-100">
-                    <div class="si-services-card__thumb">
-                        <img alt="services 24" src='{{ "assets/img/ui/card-image.png" | relURL }}' />
-                    </div>
-                    <div class="si-services-card__body">
-                        <h3 class="si-services-card__title">Services 24</h3>
-                        <p class="si-services-card__desc">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ipsum primis in
-                            faucibus orci luctus et ultrices posuere cubilia Curae.
-                        </p>
-                        <a class="si-services-card__link" href="#">
-                            Read More <span aria-hidden="true">→</span>
-                        </a>
-                    </div>
-                </article>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-                <article class="si-services-card h-100">
-                    <div class="si-services-card__thumb">
-                        <img alt="services 25" src='{{ "assets/img/ui/card-image.png" | relURL }}' />
-                    </div>
-                    <div class="si-services-card__body">
-                        <h3 class="si-services-card__title">Services 25</h3>
-                        <p class="si-services-card__desc">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ipsum primis in
-                            faucibus orci luctus et ultrices posuere cubilia Curae.
-                        </p>
-                        <a class="si-services-card__link" href="#">
-                            Read More <span aria-hidden="true">→</span>
-                        </a>
-                    </div>
-                </article>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-                <article class="si-services-card h-100">
-                    <div class="si-services-card__thumb">
-                        <img alt="services 26" src='{{ "assets/img/ui/card-image.png" | relURL }}' />
-                    </div>
-                    <div class="si-services-card__body">
-                        <h3 class="si-services-card__title">Services 26</h3>
-                        <p class="si-services-card__desc">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ipsum primis in
-                            faucibus orci luctus et ultrices posuere cubilia Curae.
-                        </p>
-                        <a class="si-services-card__link" href="#">
-                            Read More <span aria-hidden="true">→</span>
-                        </a>
-                    </div>
-                </article>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-                <article class="si-services-card h-100">
-                    <div class="si-services-card__thumb">
-                        <img alt="services 27" src='{{ "assets/img/ui/card-image.png" | relURL }}' />
-                    </div>
-                    <div class="si-services-card__body">
-                        <h3 class="si-services-card__title">Services 27</h3>
-                        <p class="si-services-card__desc">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ipsum primis in
-                            faucibus orci luctus et ultrices posuere cubilia Curae.
-                        </p>
-                        <a class="si-services-card__link" href="#">
-                            Read More <span aria-hidden="true">→</span>
-                        </a>
-                    </div>
-                </article>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-                <article class="si-services-card h-100">
-                    <div class="si-services-card__thumb">
-                        <img alt="services 28" src='{{ "assets/img/ui/card-image.png" | relURL }}' />
-                    </div>
-                    <div class="si-services-card__body">
-                        <h3 class="si-services-card__title">Services 28</h3>
-                        <p class="si-services-card__desc">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ipsum primis in
-                            faucibus orci luctus et ultrices posuere cubilia Curae.
-                        </p>
-                        <a class="si-services-card__link" href="#">
-                            Read More <span aria-hidden="true">→</span>
-                        </a>
-                    </div>
-                </article>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-                <article class="si-services-card h-100">
-                    <div class="si-services-card__thumb">
-                        <img alt="services 29" src='{{ "assets/img/ui/card-image.png" | relURL }}' />
-                    </div>
-                    <div class="si-services-card__body">
-                        <h3 class="si-services-card__title">Services 29</h3>
-                        <p class="si-services-card__desc">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ipsum primis in
-                            faucibus orci luctus et ultrices posuere cubilia Curae.
-                        </p>
-                        <a class="si-services-card__link" href="#">
-                            Read More <span aria-hidden="true">→</span>
-                        </a>
-                    </div>
-                </article>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-                <article class="si-services-card h-100">
-                    <div class="si-services-card__thumb">
-                        <img alt="services 30" src='{{ "assets/img/ui/card-image.png" | relURL }}' />
-                    </div>
-                    <div class="si-services-card__body">
-                        <h3 class="si-services-card__title">Services 30</h3>
-                        <p class="si-services-card__desc">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ipsum primis in
-                            faucibus orci luctus et ultrices posuere cubilia Curae.
-                        </p>
-                        <a class="si-services-card__link" href="#">
-                            Read More <span aria-hidden="true">→</span>
-                        </a>
-                    </div>
-                </article>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-                <article class="si-services-card h-100">
-                    <div class="si-services-card__thumb">
-                        <img alt="services 31" src='{{ "assets/img/ui/card-image.png" | relURL }}' />
-                    </div>
-                    <div class="si-services-card__body">
-                        <h3 class="si-services-card__title">Services 31</h3>
-                        <p class="si-services-card__desc">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ipsum primis in
-                            faucibus orci luctus et ultrices posuere cubilia Curae.
-                        </p>
-                        <a class="si-services-card__link" href="#">
-                            Read More <span aria-hidden="true">→</span>
-                        </a>
-                    </div>
-                </article>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-                <article class="si-services-card h-100">
-                    <div class="si-services-card__thumb">
-                        <img alt="services 32" src='{{ "assets/img/ui/card-image.png" | relURL }}' />
-                    </div>
-                    <div class="si-services-card__body">
-                        <h3 class="si-services-card__title">Services 32</h3>
-                        <p class="si-services-card__desc">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ipsum primis in
-                            faucibus orci luctus et ultrices posuere cubilia Curae.
-                        </p>
-                        <a class="si-services-card__link" href="#">
-                            Read More <span aria-hidden="true">→</span>
-                        </a>
                     </div>
                 </article>
             </div>

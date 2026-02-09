@@ -6,11 +6,11 @@
       </a>
 
       {{ $items := slice
-        (dict "name" "Home" "url" "/")
-        (dict "name" "About Us" "url" "/about/")
-        (dict "name" "Product" "url" "/product/")
-        (dict "name" "Services" "url" "/services/")
-        (dict "name" "Team" "url" "/team/")
+        (dict "name" "Beranda" "url" "/")
+        (dict "name" "Tentang Kami" "url" "/about/")
+        (dict "name" "Produk" "url" "/product/")
+        (dict "name" "Layanan" "url" "/services/")
+        (dict "name" "Tim" "url" "/team/")
         (dict "name" "Program" "url" "/program/")
         (dict "name" "Blog" "url" "/blog/")
       }}
@@ -32,7 +32,7 @@
             <i class="bi bi-search"></i>
           </button>
           <form class="si-nav__search-popover" role="search" aria-label="Search form" action='{{ "/search/" | relURL }}' method="get">
-            <input class="si-nav__search-input" type="search" name="q" placeholder="Search ..." aria-label="Search">
+            <input class="si-nav__search-input" type="search" name="q" placeholder="Cari ..." aria-label="Search">
             <button class="si-nav__search-submit" type="submit" aria-label="Search">
               <i class="bi bi-search"></i>
             </button>

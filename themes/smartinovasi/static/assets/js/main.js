@@ -168,7 +168,7 @@ document.addEventListener("DOMContentLoaded", () => {
     track.innerHTML = "";
     cards.forEach((c) => track.appendChild(c));
 
-    const intervalMs = 3000;
+    const intervalMs = 5000;
     let timer = null;
     let index = 0;
     let cardWidth = 0;

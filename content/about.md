@@ -1,5 +1,5 @@
 ---
-title: "About Us"
+title: "Tentang Kami"
 layout: "about"
 url: "/about/"
 ---

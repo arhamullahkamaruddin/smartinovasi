@@ -2,36 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/blog/blog1/</loc>
+    <lastmod>2021-05-30T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/blog/</loc>
-    <lastmod>2026-01-29T00:00:00+00:00</lastmod>
+    <lastmod>2021-05-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2026-01-29T00:00:00+00:00</lastmod>
+    <lastmod>2021-05-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/contoh/</loc>
-    <lastmod>2026-01-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/welcome/</loc>
-    <lastmod>2026-01-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/tips/</loc>
-    <lastmod>2026-01-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>http://localhost:1313/search/</loc>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
+  </url><url>
+    <loc>http://localhost:1313/program/detail/</loc>
+  </url><url>
+    <loc>http://localhost:1313/services/</loc>
   </url><url>
     <loc>http://localhost:1313/product/</loc>
   </url><url>
     <loc>http://localhost:1313/program/</loc>
   </url><url>
-    <loc>http://localhost:1313/program/detail/</loc>
+    <loc>http://localhost:1313/program1/</loc>
   </url><url>
-    <loc>http://localhost:1313/search/</loc>
-  </url><url>
-    <loc>http://localhost:1313/services/</loc>
+    <loc>http://localhost:1313/program2/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
+  </url><url>
+    <loc>http://localhost:1313/about/</loc>
   </url><url>
     <loc>http://localhost:1313/team/</loc>
   </url>

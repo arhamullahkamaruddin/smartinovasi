@@ -1,25 +1,19 @@
-.si-services-hero{
-  background: #fff;
-  padding: 0;
-  margin-top: 100px;
+/* services */
+.si-services {
+  margin-top: 80px;
+  position: relative;
   overflow: visible;
-}
-
-.si-services-hero__card{
-  border-radius: 22px;
-  overflow: hidden;
-  border: 1px solid rgba(0,0,0,.06);
-}
-
-.si-services-hero__card--text{
-  background: #eeeeee;
-  min-height: 230px;
-  padding: 0 60px;
+  background-image: url("../../img/backgrounds/bg-image.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 384px;
   display: flex;
   align-items: center;
+  margin-bottom: 30px;
 }
 
-.si-services-hero__title{
+.si-services__title {
   font-weight: 500;
   font-size: 44px;
   letter-spacing: -0.3px;
@@ -29,29 +23,51 @@
   color: transparent;
 }
 
-.si-services-hero__card--visual{
-  min-height: 230px;
-  background: linear-gradient(to bottom, #d8ecff 0%, #5aa9ff 100%);
-  position: relative;
-  overflow: hidden;
+.si-services-hero__crumb {
+  font-size: 18px;
+  color: #0B57D0;
+  display: flex;
+  gap: 8px;
+  align-items: center;
 }
 
-.si-services-hero__visual-wrap{
-  position: absolute;
-  inset: 0;
+.si-services-hero__crumb a {
+  color: inherit;
+  text-decoration: none;
 }
 
-.si-services-hero__img{
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  object-position: center bottom;
-  display: block;
+.si-services-hero__crumb a:hover {
+  text-decoration: underline;
 }
 
-.si-services-list{
+.si-services-hero__sep {
+  opacity: 0.8;
+}
+
+@media (max-width: 767.98px) {
+  .si-services {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .si-services .container {
+    width: 100%;
+  }
+
+  .si-services__title {
+    font-size: 32px;
+    color: #FFFFFF;
+  }
+
+  .si-services-hero__crumb {
+    justify-content: center;
+    color: #FFFFFF;
+  }
+}
+
+.si-services--list{
   background: #fff;
-  padding: 0 0 40px;
+  padding: 0 0 20px;
 }
 
 .si-services-card{

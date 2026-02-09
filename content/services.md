@@ -1,5 +1,5 @@
 ---
-title: "Services"
+title: "Layanan"
 layout: "services"
 url: "/services/"
 ---

@@ -1,0 +1,24 @@
+{{ define "main" }}
+<section class="si-program" id="program">
+    <div class="container">
+        <h1 class="si-program__title">Program</h1>
+        <div class="si-program-hero__crumb">
+            <a href='{{ "/" | relURL }}'>Beranda</a>
+            <span class="si-program-hero__sep">/</span>
+            <span>Program</span>
+        </div>
+    </div>
+</section>
+
+<div class="si-program-banner">
+  <img alt="Program Banner" class="si-program-banner__img" loading="lazy"
+    src='{{ "assets/img/program/prakerin.png" | relURL }}' />
+</div>
+{{ end }}
+{{ define "extra_css" }}
+<link rel="stylesheet" href='{{ "assets/css/pages/program.css" | relURL }}'>
+<link rel="stylesheet" href='{{ "assets/css/pages/detailprogram.css" | relURL }}'>
+{{ end }}
+{{ define "extra_js" }}
+<script src='{{ "assets/js/pages/program.js" | relURL }}'></script>
+{{ end }}

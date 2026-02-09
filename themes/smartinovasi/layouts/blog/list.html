@@ -1,24 +1,16 @@
 {{ define "main" }}
-<section class="si-blog-hero" id="blog">
-  <div class="container">
-    <div class="row g-4 align-items-stretch">
-      <div class="col-12 col-lg-7">
-        <div class="si-blog-hero__card si-blog-hero__card--text h-100">
-          <h2 class="si-blog-hero__title">{{ .Title | default "Blog" }}</h2>
+<section class="si-blog" id="blog">
+    <div class="container">
+        <h1 class="si-blog__title">Blog</h1>
+        <div class="si-blog-hero__crumb">
+            <a href='{{ "/" | relURL }}'>Beranda</a>
+            <span class="si-blog-hero__sep">/</span>
+            <span>Blog</span>
         </div>
-      </div>
-      <div class="col-12 col-lg-5">
-        <div class="si-blog-hero__card si-blog-hero__card--visual h-100">
-          <div class="si-blog-hero__visual-wrap">
-            <img class="si-blog-hero__img" src='{{ "assets/img/illustrations/ill-blog.png" | relURL }}' alt="Blog Illustration">
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
 </section>
 
-<section class="si-blog si-blog--list" id="blogList">
+<section class="si-blog--list" id="blogList">
   <div class="container">
     <div class="row g-4 justify-content-center" id="blogGrid">
       {{ range .Pages.ByDate.Reverse }}
@@ -35,7 +27,7 @@
             <div class="si-blog-card__body">
               <h3 class="si-blog-card__title">{{ .Title }}</h3>
               <p class="si-blog-card__desc">{{ .Summary | plainify | truncate 120 }}</p>
-              <a class="si-blog-card__link" href="{{ .RelPermalink }}">Read more</a>
+              <a class="si-blog-card__link" href="{{ .RelPermalink }}">Baca Selengkapnya...</a>
             </div>
           </article>
         </div>

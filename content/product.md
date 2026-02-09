@@ -1,5 +1,5 @@
 ---
-title: "Product"
+title: "Produk"
 layout: "product"
 url: "/product/"
 ---

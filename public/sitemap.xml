@@ -17,15 +17,15 @@
   </url><url>
     <loc>http://localhost:1313/program/detail/</loc>
   </url><url>
+    <loc>http://localhost:1313/detailprogram1/</loc>
+  </url><url>
+    <loc>http://localhost:1313/detailprogram2/</loc>
+  </url><url>
     <loc>http://localhost:1313/services/</loc>
   </url><url>
     <loc>http://localhost:1313/product/</loc>
   </url><url>
     <loc>http://localhost:1313/program/</loc>
-  </url><url>
-    <loc>http://localhost:1313/program1/</loc>
-  </url><url>
-    <loc>http://localhost:1313/program2/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
   </url><url>

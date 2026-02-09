@@ -30,6 +30,20 @@
       <description></description>
     </item>
     <item>
+      <title>Detail Program 1</title>
+      <link>http://localhost:1313/detailprogram1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/detailprogram1/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Detail Program 2</title>
+      <link>http://localhost:1313/detailprogram2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/detailprogram2/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Layanan</title>
       <link>http://localhost:1313/services/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -48,20 +62,6 @@
       <link>http://localhost:1313/program/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/program/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Program 1</title>
-      <link>http://localhost:1313/program1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/program1/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Program 2</title>
-      <link>http://localhost:1313/program2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/program2/</guid>
       <description></description>
     </item>
     <item>

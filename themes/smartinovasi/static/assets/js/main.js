@@ -297,3 +297,27 @@ document.addEventListener("DOMContentLoaded", () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
     });
 })();
+
+(function () {
+    const btn = document.querySelector(".si-to-top");
+    if (!btn) return;
+
+    const showAt = 350;
+
+    function onScroll() {
+        if (window.scrollY > showAt) {
+            btn.classList.add("is-show");
+            document.body.classList.add("show-to-top"); // TAMBAHAN
+        } else {
+            btn.classList.remove("is-show");
+            document.body.classList.remove("show-to-top"); // TAMBAHAN
+        }
+    }
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+
+    btn.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+})();

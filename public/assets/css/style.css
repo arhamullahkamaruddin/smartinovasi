@@ -26,7 +26,7 @@
 }
 
 .si-nav__brand img {
-    height: 28px;
+    height: 38px;
     display: block;
 }
 
@@ -1050,16 +1050,18 @@
     }
 }
 
+body.show-to-top .si-wa-float {
+    bottom: 80px;
+}
+
+
 .si-wa-float {
     position: fixed;
     right: 26px;
-    bottom: 80px;
-    z-index: 9999;
-
-    display: inline-block;
-    text-decoration: none;
-
-    transition: transform .2s ease, filter .2s ease;
+    bottom: 22px;
+    /* sama seperti back to top */
+    z-index: 9998;
+    transition: bottom .25s ease, transform .2s ease, filter .2s ease;
 }
 
 .si-wa-float__img {
@@ -1076,9 +1078,12 @@
 }
 
 @media (max-width: 767.98px) {
+    body.show-to-top .si-wa-float {
+        bottom: 80px;
+    }
+
     .si-wa-float {
         right: 16px;
-        bottom: 80px;
     }
 
     .si-wa-float__img {
